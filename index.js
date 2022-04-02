@@ -28,4 +28,4 @@ mongoose.connect('mongodb+srv://kelvin:salvation22@cluster0.akdtj.mongodb.net/qu
 //run server
 app.listen(process.env.PORT || 7000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+});

@@ -20,7 +20,7 @@ router.post('/publish',auth,async (req,res)=>{
         // user.poll.push(poll._id);
         user.posts.push(post._id)
         await user.save()
-        res.status(201).json({...post,user:user._id})
+        res.status(201).json(post)
        // res.status(201).json(Questions)
     }catch(err){
         console.log(err)
