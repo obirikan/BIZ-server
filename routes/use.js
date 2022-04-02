@@ -1,5 +1,5 @@
 const users=require('../models/users.js')
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const { exists } = require('../models/users.js')
 const router=require('express').Router()
