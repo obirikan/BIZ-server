@@ -14,6 +14,10 @@ app.use(cors())
 app.use('/api/handlers',handler)
 app.use('/api/user',userRoutes)
 
+app.get('/',(req,res)=>{
+    res.send('running')
+})
+
 //database setting
 mongoose.connect('mongodb+srv://kelvin:salvation22@cluster0.akdtj.mongodb.net/quizapp',{useNewUrlParser:true}).then(()=>{
     console.log('connected')
