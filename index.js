@@ -3,7 +3,11 @@ const handler=require('./routes/handlers')
 const mongoose=require('mongoose')
 const userRoutes=require('./routes/use')
 const app=express()
+
+//allows you to exchange data from back to front end
 const cors=require('cors')
+
+//sets the .env to work
 require("dotenv").config();
 
 //middlewares
